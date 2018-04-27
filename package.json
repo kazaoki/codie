@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx gulp dev",
     "build": "npx gulp",
-    "setup": "git init && npm i yarn -g && yarn"
+    "setup": "git init && npm i yarn && del package-lock.json && npx yarn"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -30,6 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "yarn": "^1.6.0"
   }
 }
