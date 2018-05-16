@@ -4,14 +4,14 @@
 
 （README編集中...）
 
-ver. 0.0.2018.4.27
+ver. 0.0.2018.5.16
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ## 作業フロー概要
 
 1. カザオキコーディングツールを以下からダウンロード/解凍し、案件フォルダ内に配置する  
-   https://github.com/kazaoki/coding-template/archive/master.zip
+   https://github.com/kazaoki/coding-tool/archive/master.zip
 2. VisualStudioCode で該当フォルダを開く
 3. npmスクリプト `setup` を実行すると、初期化＆Gitリポジトリが作られる
 4. Gitで一旦コミットする
@@ -26,7 +26,7 @@ ver. 0.0.2018.4.27
 
 ## 作業フロー1：カザオキコーディングツールのダウンロード/配置
 
-[ZIPファイルをダウンロード](https://github.com/kazaoki/coding-template/archive/master.zip)して解凍し、プロジェクトのフォルダの中に配置して下さい。
+[ZIPファイルをダウンロード](https://github.com/kazaoki/coding-tool/archive/master.zip)して解凍し、プロジェクトのフォルダの中に配置して下さい。
 以下、サンプルサイトAの案件フォルダ `sample-a` に `coding` フォルダとして配置する例です。フォルダ名は `coding` 以外でも、日本語でも、なんでも大丈夫です。
 
 ```
