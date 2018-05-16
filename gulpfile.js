@@ -103,6 +103,7 @@ gulp.task('image', ()=>{
 gulp.task('htmlphp', ()=>{
 	gulp.src(['src/**/*.html', 'src/**/*.php'])
 		.pipe(gulp.dest('dist'))
+		.pipe(browserSync.stream())
 });
 
 /**
@@ -131,7 +132,7 @@ gulp.task('watch', ()=>{
 	gulp.watch('src/scss/**/*.scss',['sass']);
 	gulp.watch('src/images/**/*',['image']);
 	gulp.watch('src/**/*.html',['htmlphp']);
-	gulp.watch('src/**/*.php',['htmlphp', ()=>{browserSync.reload()}]);
+	gulp.watch('src/**/*.php',['htmlphp']);
 });
 
 /**
