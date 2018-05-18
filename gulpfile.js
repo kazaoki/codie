@@ -33,7 +33,7 @@ gulp.task('sass', ()=>{
 		.pipe(autoPrefixer())
 		.pipe(cssComb())
 		.pipe(cmq({log:true}))
-		.pipe(csslint())
+		// .pipe(csslint())
 		.pipe(csslint.formatter())
 		// .pipe(gulp.dest('dist/css'))
 		.pipe(rename({suffix: '.min'}))
@@ -140,10 +140,9 @@ gulp.task('watch', ()=>{
  */
 gulp.task('server', ()=>{
 	browserSync.init({
-		proxy: 'localhost:8000',
-		// server: {
-		// 	baseDir: 'dist'
-		// }
+		// server: {baseDir: 'dist'}, // static
+		proxy: 'localhost:8000', // connect php
+		// proxy: 'localhost:80', // genie
 	});
 });
 

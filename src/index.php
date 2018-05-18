@@ -7,7 +7,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="top">
 
 <h1 class="big-title">タイトル!!</h1>
 
