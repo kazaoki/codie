@@ -15,7 +15,7 @@ const concat       = require('gulp-concat');
 const browserSync  = require('browser-sync');
 const imageMin     = require('gulp-imagemin');
 const cache        = require('gulp-cache');
-const connectPhp   = require('gulp-connect-php');
+const connectPhp   = require('gulp-connect-php-mb-path');
 
 /**
  * sass compile
