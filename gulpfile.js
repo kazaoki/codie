@@ -111,7 +111,7 @@ gulp.task('htmlphp', ()=>{
  */
 gulp.task('assets', ()=>{
 	gulp.src(['src/assets/**/*'])
-		.pipe(gulp.dest('dist'))
+		.pipe(gulp.dest('dist/assets'))
 });
 
 /**
@@ -149,9 +149,9 @@ gulp.task('server', ()=>{
 /**
  * build & watch
  */
-gulp.task('dev', ['js', 'sass', 'image', 'htmlphp', 'connect-php', 'server', 'watch']);
+gulp.task('dev', ['js', 'sass', 'image', 'htmlphp', 'assets', 'connect-php', 'server', 'watch']);
 
 /**
  * build only (default))
  */
-gulp.task('default', ['js', 'sass', 'image', 'htmlphp']);
+gulp.task('default', ['js', 'sass', 'image', 'htmlphp', 'assets']);
