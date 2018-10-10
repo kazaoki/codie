@@ -28,17 +28,22 @@ gulp.task('sass', ()=>{
 				this.emit('end');
 			}
 		}))
-		.pipe(sourcemaps.init())
-		.pipe(sass())
+		// .pipe(sourcemaps.init())
+		.pipe(sass({
+			// outputStyle: 'nested',
+			// outputStyle: 'expanded',
+			// outputStyle: 'compact',
+			outputStyle: 'compressed',
+		}))
 		.pipe(autoPrefixer())
-		.pipe(cssComb())
-		.pipe(cmq({log:true}))
+		// .pipe(cssComb())
+		// .pipe(cmq({log:true}))
 		// .pipe(csslint())
-		.pipe(csslint.formatter())
+		// .pipe(csslint.formatter())
 		// .pipe(gulp.dest('dist/css'))
-		.pipe(rename({suffix: '.min'}))
-		.pipe(cleanCss())
-		.pipe(sourcemaps.write('.'))
+		// .pipe(rename({suffix: '.min'}))
+		// .pipe(cleanCss())
+		// .pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist/css'))
 		.pipe(browserSync.stream())
 });
